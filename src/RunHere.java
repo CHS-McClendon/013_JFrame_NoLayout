@@ -25,7 +25,7 @@ public class RunHere {
         frame.setContentPane(demo.createContentPane());
         
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(580, 200);
+        frame.setSize(580, 300);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
         

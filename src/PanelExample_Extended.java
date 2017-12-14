@@ -1,6 +1,7 @@
 import java.awt.Color;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class PanelExample_Extended {
@@ -16,7 +17,7 @@ public class PanelExample_Extended {
 
 		// Now we create a new panel, size it, shape it,color it red.
 		// then add it to the bottom JPanel.
-		
+
 		JPanel redPanel = new JPanel();
 		redPanel.setLayout(null);
 		redPanel.setBackground(Color.RED);
@@ -25,23 +26,37 @@ public class PanelExample_Extended {
 		totalGUI.add(redPanel);
 
 		JPanel bluePanel = new JPanel();
+		bluePanel.setLayout(null);
 		bluePanel.setBackground(Color.BLUE);
 		bluePanel.setLocation(460, 35);
 		bluePanel.setSize(100, 100);
 		totalGUI.add(bluePanel);
-		
+
 		JPanel greenPanel = new JPanel();
 		greenPanel.setBackground(Color.GREEN);
 		greenPanel.setLocation(120, 35);
 		greenPanel.setSize(330, 100);
 		totalGUI.add(greenPanel);
-		
-		JButton startButton = new JButton("Start");  
+
+		JPanel pinkPanel = new JPanel();
+		pinkPanel.setBackground(Color.PINK);
+		pinkPanel.setLocation(10, 145);
+		pinkPanel.setSize(550, 100);
+		totalGUI.add(pinkPanel);
+
+		JButton startButton = new JButton("Start");
+		startButton.setBounds(15, 40, 70, 20);
 		bluePanel.add(startButton);
-		
+
 		JButton stopButton = new JButton("Stop");
-		stopButton.setBounds(15,40,70,20);
+		stopButton.setBounds(15, 40, 70, 20);
 		redPanel.add(stopButton);
+
+		JLabel redLabel = new JLabel("Red");
+		redLabel.setLocation(0, 0);
+		redLabel.setSize(50, 40);
+		redLabel.setHorizontalAlignment(0);
+		redPanel.add(redLabel);
 
 		// Finally we return the JPanel.
 		totalGUI.setOpaque(true);

@@ -39,10 +39,20 @@ public class PanelExample_Extended {
 		totalGUI.add(greenPanel);
 
 		JPanel pinkPanel = new JPanel();
+		pinkPanel.setLayout(null);
 		pinkPanel.setBackground(Color.PINK);
 		pinkPanel.setLocation(10, 145);
 		pinkPanel.setSize(550, 100);
 		totalGUI.add(pinkPanel);
+		
+		
+		JPanel cyanPanel = new JPanel();
+		cyanPanel.setLayout(null);
+		cyanPanel.setBackground(Color.CYAN);
+		cyanPanel.setLocation(10, 10);
+		cyanPanel.setSize(530, 80);
+		pinkPanel.add(cyanPanel);
+		
 
 		JButton startButton = new JButton("Start");
 		startButton.setBounds(15, 40, 70, 20);
@@ -52,12 +62,14 @@ public class PanelExample_Extended {
 		stopButton.setBounds(15, 40, 70, 20);
 		redPanel.add(stopButton);
 
+		
 		JLabel redLabel = new JLabel("Red");
-		redLabel.setLocation(0, 0);
+		redLabel.setLocation(10, 0);
 		redLabel.setSize(50, 40);
-		redLabel.setHorizontalAlignment(0);
+		redLabel.setHorizontalAlignment(2);
 		redPanel.add(redLabel);
 
+		
 		// Finally we return the JPanel.
 		totalGUI.setOpaque(true);
 		totalGUI.setBackground(Color.YELLOW);

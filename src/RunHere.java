@@ -33,4 +33,18 @@ public class RunHere {
         JOptionPane.showMessageDialog(frame, "Hello! I LOVE Java! I LOVE Swing!");
 
 	}
+	
+	/*
+	 * Checkpoint Grade for fundamental Swing GUI:
+	 * 
+	 * 
+	 * 1. All class code is working properly
+	 * 2. Add one more panel to the bottom (3 panels total)
+	 * 3. On the outer bottom panel, add "Left" label, and "Right" labe
+	 * 4. On the center panel, add a JButton with "Push Me"
+	 * 
+	 * 
+	 */
+	
+	
 }
